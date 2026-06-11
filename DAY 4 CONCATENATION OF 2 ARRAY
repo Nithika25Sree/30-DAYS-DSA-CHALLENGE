@@ -1,0 +1,42 @@
+1929. Concatenation of Array
+
+logic
+-----
+
+If:
+nums = [1,2,3]
+Length n = 3
+
+Create new array of size 2*n = 6
+---------------------------------
+
+ans[0] = nums[0]
+ans[1] = nums[1]
+ans[2] = nums[2]
+
+ans[3] = nums[0]
+ans[4] = nums[1]
+ans[5] = nums[2]
+
+Result
+-------
+
+[1,2,3,1,2,3]
+
+code
+----
+
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+
+        int n = nums.length;
+        int[] ans = new int[2 * n];
+
+        for (int i = 0; i < n; i++) {
+            ans[i] = nums[i];
+            ans[i + n] = nums[i];
+        }
+
+        return ans;
+    }
+}
