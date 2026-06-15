@@ -1,0 +1,54 @@
+Check Even or Odd
+-----------------
+
+Given a number n, check whether it is even or odd. Return true for even and false for odd
+
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println(num + " is Even");
+        } else {
+            System.out.println(num + " is Odd");
+        }
+
+        sc.close();
+    }
+}
+
+Program for sum of n natural numbers
+-------------------------------------
+
+Given a positive integer n, find the sum of the first n natural numbers
+
+For example n = 4
+Initially : sum = 0
+i = 1, sum = sum + 1 = 1
+i = 2, sum = sum + 2 = 3
+i = 3, sum = sum + 3 = 7
+i = 4, sum = sum + 4 = 11
+
+import java.io.*;
+
+class SUMOFNUMBERS{
+    static int findSum(int n){
+        int sum = 0;
+        for (int i= 1; i <= n; i++) 
+        {
+            sum = sum + i;
+        }
+        return sum;
+    }
+    public static void main(String args[])
+    {
+        int n = 5;
+        System.out.println(findSum(n));
+    } 
+}
+
