@@ -1,0 +1,152 @@
+we are going to finsh fundamentals tdy so lets start !
+
+LEARNING FROM GREEKSFORGREEKS
+=============================
+
+Input Output in Java
+--------------------
+
+import java.util.Scanner;
+
+public class GFG {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your age, height, grade, and name: ");
+        int age = sc.nextInt(); // from user we will get a integer
+        float height = sc.nextFloat(); // from user we wiil get a float value
+        char grade = sc.next().charAt(0); // from user we will get char 
+        String name = sc.next(); // from user we get string 
+
+        System.out.println("Your age: " + age);
+        System.out.println("Your height: " + height);
+        System.out.println("Your grade: " + grade);
+        System.out.println("Your name: " + name);
+    }
+}
+
+Input
+-----
+20 5.9 A Alice
+
+Output
+------
+Your age: 20
+Your height: 5.9
+Your grade: A
+Your name: Alice
+
+
+Conditional Statements in Programming
+=====================================
+
+Conditional statements are decision-making statements in programming that execute different blocks of code based on whether a condition is true or false.
+
+If Conditional Statement
+-------------------------
+The if statement checks a condition and executes a block of code only when the condition is true.
+
+If-Else Conditional Statement
+------------------------------
+The if-else statement checks a condition and runs one block of code if the condition is true, and another block of code if the condition is false.
+
+if-Else if Conditional Statement
+--------------------------------
+The if-else if statement is used to check multiple conditions. The program evaluates each condition one by one and executes the block of code for the first condition that is true.
+
+Switch Conditional Statement
+----------------------------
+The switch statement checks a variable against multiple possible values. Each option is written as a case, and the program executes the matching case. 
+A break statement is usually used to stop execution after a case runs.
+
+
+example program:
+
+import java.util.Scanner;
+
+public class ConditionalDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        System.out.print("Enter your mark: ");
+        int mark = sc.nextInt();
+
+        System.out.print("Enter a day number (1-7): ");
+        int day = sc.nextInt();
+
+        // 1. if statement
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        }
+
+        // 2. if-else statement
+        if (mark >= 50) {
+            System.out.println("Pass");
+        } else {
+            System.out.println("Fail");
+        }
+
+        // 3. else-if ladder
+        if (mark >= 90) {
+            System.out.println("Grade A");
+        } else if (mark >= 75) {
+            System.out.println("Grade B");
+        } else if (mark >= 50) {
+            System.out.println("Grade C");
+        } else {
+            System.out.println("Grade F");
+        }
+
+        // 4. Nested if
+        if (age >= 18) {
+            if (mark >= 50) {
+                System.out.println("Eligible and Passed");
+            }
+        }
+
+        // 5. Switch statement
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
+        }
+
+        sc.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
