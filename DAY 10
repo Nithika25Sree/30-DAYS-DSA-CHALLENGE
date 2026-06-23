@@ -1,0 +1,79 @@
+PATTERNS
+========
+
+Pattern Logic Formula
+---------------------
+
+for(int i = 1; i <= n; i++) {      // rows
+    for(int j = 1; j <= ?; j++) {  // columns
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+
+1. Square Star Pattern
+======================
+
+OUTPUT
+------
+
+* * * *
+* * * *
+* * * *
+* * * *
+
+code
+----
+
+int n = 4;
+
+for(int i = 1; i <= n; i++) {
+    for(int j = 1; j <= n; j++) {
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+
+2. Right Triangle Star
+
+OUTPUT
+======
+
+*
+* *
+* * *
+* * * *
+
+code
+----
+int n = 4;
+
+for(int i = 1; i <= n; i++) {
+    for(int j = 1; j <= i; j++) {
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+
+3. Inverted Triangle
+
+OUTPUT
+======
+* * * *
+* * *
+* *
+*
+
+code
+----
+
+int n = 4;
+
+for(int i = 1; i <= n; i++) {
+
+    for(int j = 1; j <= n - i + 1; j++) {
+        System.out.print("* ");
+    }
+
+    System.out.println();
+}
