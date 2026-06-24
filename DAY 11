@@ -1,0 +1,64 @@
+NUMBER PATTERN 
+==============
+
+output
+------
+
+1
+1 2
+1 2 3
+1 2 3 4
+
+code 
+-----
+
+int n = 4;
+
+for(int i = 1; i <= n; i++) {
+    for(int j = 1; j <= i; j++) {
+        System.out.print(j + " ");
+    }
+    System.out.println();
+}
+
+PATTERN 
+=======
+
+A
+A B
+A B C
+A B C D
+
+A = 65
+B = 66
+C = 67
+D = 68
+
+code
+-----
+
+int n = 4;
+
+for(int i = 1; i <= n; i++) {
+
+    for(int j = 1; j <= i; j++) {
+
+        System.out.print((char)('A' + j - 1) + " ");
+    }
+
+    System.out.println();
+}
+
+Dry Run
+-------
+
+Row 3 (i = 3)
+
+j = 1 → 'A'+0 → A
+j = 2 → 'A'+1 → B
+j = 3 → 'A'+2 → C
+
+Output:
+-------
+
+A B C
