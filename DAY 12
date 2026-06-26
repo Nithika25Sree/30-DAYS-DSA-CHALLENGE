@@ -1,0 +1,57 @@
+ALphabet pattern 
+================
+
+A
+B B 
+C C C 
+D D D D
+
+code 
+----
+int n=4;
+for(int i = 1;i<=n;i++){
+   for(int j = 1; j<i; j++){
+      System.out.print((char) ('A'+i-1) + " ");
+   }
+System.out.println();
+}
+
+PATTERN 
+=======
+
+   *
+  ***
+ *****
+*******
+
+Row 1 → 3 spaces, 1 star
+Row 2 → 2 spaces, 3 stars
+Row 3 → 1 space, 5 stars
+Row 4 → 0 spaces, 7 stars
+
+* Spaces = n - i
+* Stars = 2 * i - 1
+
+Code 
+-----
+
+int n = 4;
+
+for (int i = 1; i <= n; i++) {
+
+    // Print spaces
+    for (int j = 1; j <= n - i; j++) {
+        System.out.print(" ");
+    }
+
+    // Print stars
+    for (int j = 1; j <= 2 * i - 1; j++) {
+        System.out.print("*");
+    }
+
+    System.out.println();
+}
+
+
+
+ 
