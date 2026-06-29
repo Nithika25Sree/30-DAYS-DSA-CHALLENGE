@@ -1,0 +1,82 @@
+HOLLOW SQUARE
+
+*****
+*   *
+*   *
+*   *
+*****
+
+int n = 5;
+
+for(int i = 1; i <= n; i++) {
+
+    for(int j = 1; j <= n; j++) {
+
+        if(i == 1 || i == n || j == 1 || j == n) {
+            System.out.print("*");
+        }
+        else {
+            System.out.print(" ");
+        }
+
+    }
+
+    System.out.println();
+}
+
+i == 1
+-------
+
+Means:
+First row
+
+*****
+Since it's the first row, every column prints *
+
+i == n
+------
+
+Means:
+
+Last row
+
+If n = 5:
+
+*****
+
+Again, every column prints *
+
+j==1
+----
+
+Means:
+
+First column
+
+Visualize the positions:
+
+* . . . .
+* . . . .
+* . . . .
+* . . . .
+* . . . .
+
+The first column is always a star *
+
+j == n
+------
+
+Means:
+
+Last column
+
+. . . . *
+. . . . *
+. . . . *
+. . . . *
+. . . . *
+
+The last column is also always a star *
+
+
+
